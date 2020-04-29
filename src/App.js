@@ -1,26 +1,42 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import LoginApp from './component/LoginApp';
+import BannerApp from './component/BannerApp';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="page">
+        <header id="banner-header">
+          <div className="banner">
+            <div className="hidden-menu">
+              <a href="#" id="menutoggle" className="menu">
+
+              </a>
+            </div>
+            <div className="banner-title">
+              <BannerApp />
+            </div>
+            <div className="right-options">
+              <a href="#" id="searchtoggle" className="search">
+
+              </a>
+              <a href="#" id="accounttoggle" className="account">
+
+              </a>
+              <a href="#" id="carttoggle" className="cart">
+
+              </a>
+            </div>
+          </div>
+         
+        </header>
+        <div className="side">
+            <LoginApp />
+          </div>
+      </div>
+    );
+  }
 }
 
 export default App;
