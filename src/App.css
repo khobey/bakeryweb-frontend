@@ -9,15 +9,7 @@
   --secondary: #2a3747;
 
   --highlight: #fa4141;
-
-  --ui-shawdow: 0 2px 4px -1px rgba(0, 0, 0, 0.06),
-    0 4px 5px 0 rgba(0, 0, 0, 0.06), 0 1px 10px 0 rgba(0, 0, 0, 0.08);
-  fill: rgba(0, 0, 0, 0.54);
-  --ui-shawdow-border: 1px solid rgba(0, 0, 0, 0.14);
-}
-
-* {
-  box-sizing: border-box;
+  --theme-color:  rgb(199, 0, 66);
 }
 
 html,
@@ -32,7 +24,6 @@ body,
   flex-direction: column;
 }
 
-
 body {
   margin: 0;
   padding: 0;
@@ -42,14 +33,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-  background: url("images/strawberryshortcake.jpg") left top;
+  
   background-size: cover;
 }
 
 h1 {
-  font-size: 40px;
+  font-size: 20px;
   font-family: var(--logo-font);
-  padding: 25px;
+  color: whitesmoke;
+  padding-top: 10px;
 }
 
 .page {
@@ -62,9 +54,9 @@ h1 {
   height: 100%;
   width: 100%;
 
-  padding: 20px;
 
   background-size: cover;
+  background-color: whitesmoke;
 
   font-family: var(--core-font);
 
@@ -78,15 +70,10 @@ h1 {
 
   width: 100%;
 
-  border-radius: 5px;
-
   overflow: hidden;
-  background: white;
+  background: var(--theme-color);
   padding: 5px;
 
-  border-bottom: var(--ui-shawdow-border);
-  
-  box-shadow: var(--ui-shawdow);
   position: relative;
 
 }
@@ -97,7 +84,7 @@ h1 {
 }
 
 .right-options{
-  left: 1200px;
+  left: 1290px;
   position: relative;
 }
 
@@ -105,7 +92,8 @@ h1 {
   text-decoration: none;
   font-size: 20px;
   float: left;
-  padding: 15px;
+  padding: 10px;
+  color: whitesmoke;
 }
 
 #searchtoggle{
@@ -113,7 +101,7 @@ h1 {
   float: left;
   padding: 25px;
   position: relative;
-  background: url("images/round_search_black_36dp.png") no-repeat 50% 50%;
+  background: url("images/baseline_search_white_36dp.png") no-repeat 50% 50%;
   background-size: 65% auto;
 }
 
@@ -122,7 +110,7 @@ h1 {
   float: left;
   padding: 25px;
   position: relative;
-  background: url("images/round_add_shopping_cart_black_36dp.png") no-repeat 50% 50%;
+  background: url("images/baseline_add_shopping_cart_white_36dp.png") no-repeat 50% 50%;
   background-size: 65% auto;
 }
 
@@ -131,6 +119,27 @@ h1 {
   float: left;
   padding: 25px;
   position: relative;
-  background: url("images/round_account_circle_black_36dp.png") no-repeat 50% 50%;
+  background: url("images/baseline_account_circle_white_36dp.png") no-repeat 50% 50%;
   background-size: 65% auto;
+}
+
+.carousel-item {
+  height: 85vh;
+  min-height: 350px;
+  background: no-repeat 10% 10% scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+  width: 100%;
+  background: var(--theme-color);
+  padding-bottom: 1.0rem!important;
+  padding-top: 1.0rem!important;
+}
+
+small{
+  color: whitesmoke;
 }
