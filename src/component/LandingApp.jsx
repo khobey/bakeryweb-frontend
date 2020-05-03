@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../styles/landing.css';
 import HeaderApp from './HeaderApp';
+import { BrowserRouter as Router, Link } from 'react-router-dom';
 
 class LandingApp extends Component {
     render() {
@@ -18,15 +19,17 @@ function Banner() {
             <h1>Baked Crumbs</h1>
         </div>
         <div className="right-options">
-            <a href="#" id="about" className="about">
-                About
-            </a>
-            <a href="#" id="searchtoggle" className="search">
-            </a>
-            <a href="#" id="carttoggle" className="cart">
-            </a>
-            <a href="#" id="accounttoggle" className="account">
-            </a>
+            <Router >
+                <Link id="about" className="about">
+                    About
+            </Link>
+                <Link id="searchtoggle" className="search">
+                </Link>
+                <Link id="carttoggle" className="cart">
+                </Link>
+                <Link id="accounttoggle" className="account" to="/signin">
+                </Link>
+            </Router >
         </div>
     </div>;
 }
@@ -38,5 +41,6 @@ function Footer() {
         </div>
     </footer>;
 }
+
 
 export default LandingApp;
