@@ -1,0 +1,90 @@
+h1 {
+    font-size: 20px;
+    font-family: var(--logo-font);
+    color: whitesmoke;
+    padding-top: 10px;
+  }
+
+  
+  #banner-header{
+    display: flex;
+    flex-direction: row;
+    /*justify-content: center;*/
+    align-items: center;
+  
+    width: 100%;
+  
+    overflow: hidden;
+    background: var(--theme-color);
+    padding: 5px;
+  
+    position: relative;
+  
+  }
+  
+  .banner-title{
+    position: absolute;
+    left: auto;
+  }
+  
+  .right-options{
+    left: 81rem!important;
+    position: relative;
+  }
+  
+  .about {
+    text-decoration: none;
+    font-size: 20px;
+    float: left;
+    padding: 10px;
+    color: whitesmoke;
+  }
+  
+  #searchtoggle{
+    font-size: 0;
+    float: left;
+    padding: 25px;
+    position: relative;
+    background: url("../images/baseline_search_white_36dp.png") no-repeat 50% 50%;
+    background-size: 65% auto;
+  }
+  
+  #carttoggle{
+    font-size: 0;
+    float: left;
+    padding: 25px;
+    position: relative;
+    background: url("../images/baseline_add_shopping_cart_white_36dp.png") no-repeat 50% 50%;
+    background-size: 65% auto;
+  }
+  
+  #accounttoggle{
+    font-size: 0;
+    float: left;
+    padding: 25px;
+    position: relative;
+    background: url("../images/baseline_account_circle_white_36dp.png") no-repeat 50% 50%;
+    background-size: 65% auto;
+  }
+  
+  .carousel-item {
+    height: 85vh;
+    min-height: 350px;
+    background: no-repeat 10% 10% scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  }
+  
+  #sticky-footer {
+    flex-shrink: none;
+    width: 100%;
+    background: var(--theme-color);
+    padding-bottom: 1.0rem!important;
+    padding-top: 1.0rem!important;
+  }
+  
+  small{
+    color: whitesmoke;
+  }
+  
