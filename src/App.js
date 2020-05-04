@@ -26,6 +26,4 @@ function Routes() {
   );
 }
 
-
-
 export default App;

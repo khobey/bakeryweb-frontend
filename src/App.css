@@ -9,7 +9,8 @@
   --secondary: #2a3747;
 
   --highlight: #fa4141;
-  --theme-color:  rgb(0, 136, 199);
+  --theme-color:  linear-gradient(to right, rgb(0, 192, 199) , rgb(196, 83, 241));
+  
 }
 
 html,
